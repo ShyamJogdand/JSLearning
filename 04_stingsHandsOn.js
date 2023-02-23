@@ -14,7 +14,8 @@ var count =  givenString.length - strTrim.length;
 console.log("Removed space count               :", count);
 
 console.log("First char of string              :", strTrim.charAt(strTrim));
-var charLast = strTrim.charAt(strnLenght-1);
+// var charLast = strTrim.charAt(strnLenght-1);
+var charLast = strTrim[strTrim.length - 1];
 console.log("Last char of string               : ", charLast);
 
 console.log("Total worlds in the string        :", strTrim.split(" "));
