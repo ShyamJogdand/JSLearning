@@ -44,3 +44,17 @@ console.log(`I am Angular Developer.                         Last word count is:
 
 var result = lastWordCharsCounnt("Hard work and commitment is the key of success");
 console.log(`Hard work and commitment is the key of success. Last word count is: ${result}`);
+
+console.log("--------- Find first word length");
+var firstwordLength = function (strGiven){
+    var firstWord = "";
+    for (let index = 0; index < strGiven.length; index++) {
+        var char = strGiven.charAt(index);
+        firstWord = firstWord + char;
+        if(char==" ") {
+            break;
+        } 
+    } return firstWord;
+}
+var firstWord = firstwordLength("Representation of JavaScript");
+console.log(`First word--> ${firstWord} length is : ${firstWord.length}`);
