@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Web Session Storage</title>
+</head>
+<body>
+    <h2> Web Session Storage </h2>
+    <script>
+        var aaa = "Global Variable";
+        window.sessionStorage.setItem("First Name", "Virat");
+        window.sessionStorage.setItem("Country", "India");
+        window.sessionStorage.setItem("State", "MH");
+
+        const country = window.sessionStorage.getItem("Country");
+        console.log(country);
+        window.sessionStorage.removeItem("State");
+        var x = window.sessionStorage.key(0);
+        console.log(x);
+        var getLength = window.sessionStorage.length;
+        console.log(getLength);
+        // window.sessionStorage.clear();      
+    </script>
+</body>
+</html>
